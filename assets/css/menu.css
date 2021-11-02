@@ -1,0 +1,251 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fix-icon{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 4;
+}
+#open{
+  background: #333;
+  color: white;
+  font-size: 70px;
+  text-decoration: none;
+  padding: 0 10px 8px; 
+  transition: 0.3s;
+  cursor: pointer;
+  text-align: center;
+}
+
+#open:hover{
+  opacity: 0.7;
+}
+#insta{
+  width: 30px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+#youtube{
+  width: 40px;
+  margin: 10px 20px 5px 10px;
+  cursor: pointer;
+}
+
+nav{
+  width: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  overflow: hidden;
+  transition: 0.5s;
+  z-index: 5;
+}
+
+#nav-items{
+  margin: auto;
+}
+
+#nav-items ul{
+  list-style: none; 
+}
+
+#nav-items ul li{
+  font-size: 2em;
+  text-align: center;
+  padding: 10px;
+  transition: 0.5s;
+}
+#nav-items ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+#nav-items a span{
+  transition: 0.5s;
+  position: relative;
+}
+
+#nav-items a span::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+  background: white;
+  transform: scale(0,1);
+  transform-origin: left;
+  transition: 0.5s;
+}
+
+#nav-items ul li:hover span::before{
+  transform: scale(1);
+}
+
+#close{
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  font-size: 40px;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#close:hover{
+  color: gray;
+}
+
+#reserve{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #333;
+  display: block;
+  display: flex;
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  position: fixed;
+  right: 30px;
+  top: 120px;
+  cursor: pointer;
+  z-index: 4;
+  transition: 0.3s;
+}
+
+#reserve span{
+  margin: auto;
+}
+
+#reserve:hover{
+  background: #777;
+}
+
+h1{
+  font-size: 80px;
+  margin: 20px auto 0 40px;
+  color: #333;
+}
+
+#main{
+  width: 80%;
+  margin: 50px auto 0;
+  color: #333;
+}
+
+#main h2:hover{
+  opacity: 0.7;
+}
+
+#main h2 i{
+  margin-right: 5px;
+}
+
+.tab{
+  margin-top: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.tab i{
+  transition: 0.5s;
+}
+.content{
+  padding: 1em;
+  font-size: 20px;
+  text-align: center;
+  line-height: 3;
+  display: none;
+}
+
+.back-to-top{
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  background: #777;
+  border: none;
+  border-radius: 20% 0 0 0;
+  color: white;
+  cursor: pointer;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 4;
+  transition: 0.3s;
+  display: none;
+}
+
+
+
+.back-to-top:hover{
+  opacity: 0.7;
+}
+
+
+footer{
+  margin-top: 180px;
+}
+
+#footer-nav{
+  width: 80%;
+  margin: 70px auto 0;
+}
+#footer-nav ul{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+#footer-nav ul li{
+  flex: 1;
+  list-style: none; 
+}
+#footer-nav ul li a{
+  text-decoration: none;
+  color: #999;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+#footer-nav ul li a:hover{
+  opacity: 0.7;
+}
+
+footer div{
+  width: 100%;
+  background: #999;
+  text-align: center;
+  padding: 1em;
+  margin-top: 30px;
+  color: white;
+}
+
+@media(max-width:768px){
+
+  #reserve{
+    width: 80px;
+    height: 80px;
+    font-size: 18px;
+    right: 20px;
+    top: 100px;
+  }
+
+  #footer-nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    line-height: 2;
+  }
+}
