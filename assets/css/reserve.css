@@ -7,7 +7,7 @@
 
 .fix-icon{
   position: fixed;
-  top: 0;
+  top: -11px;
   right: 0;
   z-index: 2;
 }
@@ -38,7 +38,7 @@
   color: white;
   font-size: 70px;
   text-decoration: none;
-  padding: 0 10px 8px; 
+  padding: 0 12px 5px; 
   transition: 0.3s;
   cursor: pointer;
   text-align: center;
